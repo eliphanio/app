@@ -17,42 +17,42 @@ code {
 
 @layer base {
     :root {
-        /* Elegant Dark Charcoal Palette with Gold Accents */
-        --background: 216 15% 8%;          /* Deep charcoal #0F1113 */
-        --foreground: 0 0% 92%;             /* Soft white #EBEBEB */
+        /* Minimal Light Palette with Soft Rose Accents */
+        --background: 340 25% 97%;          /* Very light rose-tinted white #FAF7F8 */
+        --foreground: 340 15% 20%;          /* Deep charcoal with rose hint #3D2F32 */
         
-        --card: 216 12% 12%;                /* Slightly lighter charcoal #1A1C1E */
-        --card-foreground: 0 0% 92%;
+        --card: 0 0% 100%;                  /* Pure white for cards */
+        --card-foreground: 340 15% 20%;
         
-        --popover: 216 12% 12%;
-        --popover-foreground: 0 0% 92%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 340 15% 20%;
         
-        --primary: 43 74% 58%;              /* Warm gold #D4AF37 */
-        --primary-foreground: 216 15% 8%;
+        --primary: 340 65% 65%;             /* Soft rose pink #D98FA0 */
+        --primary-foreground: 0 0% 100%;
         
-        --secondary: 216 12% 18%;           /* Muted charcoal */
-        --secondary-foreground: 0 0% 92%;
+        --secondary: 340 20% 92%;           /* Very light rose #F5EEEF */
+        --secondary-foreground: 340 15% 20%;
         
-        --muted: 216 10% 22%;               /* Subtle gray */
-        --muted-foreground: 0 0% 60%;       /* Muted text */
+        --muted: 340 15% 94%;               /* Subtle light gray-rose */
+        --muted-foreground: 340 10% 50%;    /* Muted text */
         
-        --accent: 38 92% 58%;               /* Rich amber #FFBF00 */
-        --accent-foreground: 216 15% 8%;
+        --accent: 350 70% 70%;              /* Brighter rose accent #E5A1AD */
+        --accent-foreground: 0 0% 100%;
         
         --destructive: 0 72% 58%;           /* Soft red for errors */
         --destructive-foreground: 0 0% 98%;
         
-        --border: 216 10% 20%;              /* Subtle borders */
-        --input: 216 12% 15%;               /* Input background */
-        --ring: 43 74% 58%;                 /* Gold focus ring */
+        --border: 340 15% 88%;              /* Light rose border #E8DFE1 */
+        --input: 340 20% 98%;               /* Almost white input */
+        --ring: 340 65% 65%;                /* Rose focus ring */
         
-        --radius: 0.75rem;
+        --radius: 1rem;
         
         /* Custom Design Tokens */
-        --elegant-glow: 0 0 40px hsl(43 74% 58% / 0.15);
-        --subtle-shadow: 0 10px 30px -10px hsl(0 0% 0% / 0.5);
+        --elegant-glow: 0 0 30px hsl(340 65% 65% / 0.12);
+        --subtle-shadow: 0 4px 20px -4px hsl(340 30% 60% / 0.15);
         --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        --gradient-subtle: linear-gradient(135deg, hsl(216 15% 8%), hsl(216 12% 10%));
+        --gradient-subtle: linear-gradient(135deg, hsl(340 25% 97%), hsl(350 30% 98%));
     }
 }
 
