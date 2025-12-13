@@ -58,12 +58,12 @@ export default function RevealedContent({ userName }) {
             </div>
 
             {/* Personal message */}
-            <div className="space-y-6 text-foreground/90 leading-relaxed">
-              <p className="text-lg sm:text-xl font-light text-center">
+            <div className="space-y-5 sm:space-y-6 text-foreground/85 leading-relaxed">
+              <p className="text-base sm:text-lg lg:text-xl font-light text-center">
                 Cet espace n'existe que pour toi.
               </p>
               
-              <div className="space-y-4 text-base sm:text-lg font-light max-w-2xl mx-auto">
+              <div className="space-y-3.5 sm:space-y-4 text-sm sm:text-base lg:text-lg font-light max-w-2xl mx-auto">
                 <p>
                   Dans un monde où tout est partagé, commenté, éphémère, j'ai voulu créer quelque chose
                   qui n'appartient qu'à un seul regard : le tien.
@@ -78,27 +78,27 @@ export default function RevealedContent({ userName }) {
                   sans être dilués dans le flux constant des écrans.
                 </p>
                 
-                <p className="pt-4 text-center text-muted-foreground italic">
+                <p className="pt-3 sm:pt-4 text-center text-muted-foreground italic text-xs sm:text-sm">
                   Ce que tu lis ici, personne d'autre ne le lira jamais.
                 </p>
                 
-                <p className="pt-6 text-center">
+                <p className="pt-4 sm:pt-6 text-center">
                   C'est rare, précieux, et terriblement fragile.
                 </p>
                 
-                <p className="pt-4 text-center font-medium text-primary">
+                <p className="pt-3 sm:pt-4 text-center font-medium text-primary">
                   Exactement comme nous.
                 </p>
               </div>
             </div>
 
             {/* Decorative separator */}
-            <div className="mt-12 flex justify-center">
-              <div className="w-32 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+            <div className="mt-8 sm:mt-10 lg:mt-12 flex justify-center">
+              <div className="w-20 sm:w-32 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
             </div>
 
             {/* Footer note */}
-            <p className="mt-8 text-center text-sm text-muted-foreground/60 font-light">
+            <p className="mt-6 sm:mt-8 text-center text-xs sm:text-sm text-muted-foreground/60 font-light">
               Créé avec intention, pour {userName}
             </p>
           </div>
