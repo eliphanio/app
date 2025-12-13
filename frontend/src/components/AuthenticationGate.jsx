@@ -54,11 +54,11 @@ export default function AuthenticationGate({ onAuthenticate }) {
           </div>
 
           {/* Authentication form */}
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
             <div className="space-y-2">
               <Label 
                 htmlFor="name" 
-                className="text-sm font-normal text-muted-foreground"
+                className="text-xs sm:text-sm font-normal text-muted-foreground"
               >
                 Prénom
               </Label>
@@ -68,7 +68,7 @@ export default function AuthenticationGate({ onAuthenticate }) {
                 value={inputName}
                 onChange={(e) => setInputName(e.target.value)}
                 placeholder="Entrez votre prénom"
-                className="h-12 bg-input/50 border-border/50 text-foreground placeholder:text-muted-foreground/40 focus:border-primary/50 focus:ring-primary/20 transition-smooth"
+                className="h-11 sm:h-12 bg-input border-border text-foreground placeholder:text-muted-foreground/40 focus:border-primary focus:ring-primary/20 transition-smooth text-base"
                 disabled={isValidating}
                 autoFocus
               />
@@ -77,7 +77,7 @@ export default function AuthenticationGate({ onAuthenticate }) {
             {/* Error message */}
             {error && (
               <div className="animate-in fade-in slide-in-from-top-1 duration-300">
-                <p className="text-sm text-destructive/90 font-light text-center bg-destructive/10 py-2 px-4 rounded-lg border border-destructive/20">
+                <p className="text-xs sm:text-sm text-destructive/90 font-light text-center bg-destructive/10 py-2.5 px-4 rounded-xl border border-destructive/20">
                   {error}
                 </p>
               </div>
@@ -87,7 +87,7 @@ export default function AuthenticationGate({ onAuthenticate }) {
             <Button
               type="submit"
               disabled={!inputName.trim() || isValidating}
-              className="w-full h-12 bg-primary hover:bg-primary/90 text-primary-foreground font-medium transition-smooth elegant-glow disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full h-11 sm:h-12 bg-primary hover:bg-primary/90 text-primary-foreground font-medium transition-smooth disabled:opacity-50 disabled:cursor-not-allowed text-base rounded-xl"
             >
               {isValidating ? (
                 <span className="flex items-center gap-2">
@@ -101,8 +101,8 @@ export default function AuthenticationGate({ onAuthenticate }) {
           </form>
 
           {/* Subtle decorative element */}
-          <div className="mt-8 flex justify-center">
-            <div className="w-12 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+          <div className="mt-6 sm:mt-8 flex justify-center">
+            <div className="w-12 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
           </div>
         </div>
       </div>
