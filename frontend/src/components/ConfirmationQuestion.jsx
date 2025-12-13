@@ -87,7 +87,7 @@ export default function ConfirmationQuestion({ userName, onConfirm }) {
                       handleNoButtonHover();
                     }}
                     variant="outline"
-                    className="h-12 sm:h-14 px-8 sm:px-12 border-2 border-primary/30 text-primary hover:border-primary/50 hover:text-primary/90 text-base sm:text-lg font-medium transition-smooth rounded-xl w-full sm:w-auto"
+                    className="h-12 sm:h-14 px-8 sm:px-12 bg-transparent border-2 border-primary/30 text-primary hover:bg-primary/5 hover:border-primary/50 hover:text-primary text-base sm:text-lg font-medium transition-smooth rounded-xl w-full sm:w-auto"
                   >
                     Non
                   </Button>
