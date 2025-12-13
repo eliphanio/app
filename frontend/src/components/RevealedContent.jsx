@@ -16,16 +16,16 @@ export default function RevealedContent({ userName }) {
   };
 
   return (
-    <div className="w-full max-w-3xl">
+    <div className="w-full max-w-3xl px-4">
       {/* Logout button - top right */}
-      <div className="flex justify-end mb-6">
+      <div className="flex justify-end mb-4 sm:mb-6">
         <Button
           onClick={handleLogout}
           variant="ghost"
           size="sm"
-          className="text-muted-foreground hover:text-foreground transition-smooth"
+          className="text-muted-foreground hover:text-primary transition-smooth text-xs sm:text-sm"
         >
-          <LogOut className="w-4 h-4 mr-2" />
+          <LogOut className="w-3.5 h-3.5 sm:w-4 sm:h-4 mr-1.5 sm:mr-2" />
           Se déconnecter
         </Button>
       </div>
@@ -38,23 +38,23 @@ export default function RevealedContent({ userName }) {
             : 'opacity-0 translate-y-8'
         }`}
       >
-        {/* Glass card for revealed content */}
+        {/* Minimal card for revealed content */}
         <div className="relative">
-          {/* Ambient glow */}
-          <div className="absolute -inset-1 bg-accent/10 blur-2xl rounded-3xl" />
+          {/* Subtle rose glow */}
+          <div className="absolute -inset-1 bg-accent/8 blur-2xl rounded-3xl" />
           
-          <div className="relative bg-card/70 backdrop-blur-xl border border-border/50 rounded-3xl p-8 sm:p-12 lg:p-16 subtle-shadow">
+          <div className="relative bg-card border border-border rounded-3xl p-6 sm:p-10 lg:p-14 subtle-shadow">
             {/* Welcome header */}
-            <div className="text-center mb-12">
-              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 mb-6 elegant-glow">
-                <Heart className="w-9 h-9 text-primary" strokeWidth={1.5} />
+            <div className="text-center mb-8 sm:mb-10 lg:mb-12">
+              <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-secondary mb-5 sm:mb-6">
+                <Heart className="w-7 h-7 sm:w-9 sm:h-9 text-primary" strokeWidth={1.5} />
               </div>
               
-              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-light text-foreground mb-4 tracking-wide">
+              <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-foreground mb-3 sm:mb-4 tracking-wide">
                 Bienvenue, {userName}
               </h1>
               
-              <div className="w-20 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent mx-auto" />
+              <div className="w-16 sm:w-20 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent mx-auto" />
             </div>
 
             {/* Personal message */}
