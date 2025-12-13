@@ -29,26 +29,26 @@ export default function AuthenticationGate({ onAuthenticate }) {
   };
 
   return (
-    <div className="w-full max-w-md animate-in fade-in duration-700">
-      {/* Glass card container */}
+    <div className="w-full max-w-md px-4 animate-in fade-in duration-700">
+      {/* Minimal card container */}
       <div className="relative">
-        {/* Subtle glow effect */}
-        <div className="absolute -inset-1 bg-primary/5 blur-xl rounded-2xl" />
+        {/* Subtle rose glow effect */}
+        <div className="absolute -inset-1 bg-primary/8 blur-2xl rounded-3xl" />
         
-        <div className="relative bg-card/80 backdrop-blur-xl border border-border/50 rounded-2xl p-8 sm:p-12 subtle-shadow">
-          {/* Lock icon with elegant styling */}
-          <div className="flex justify-center mb-8">
-            <div className="w-16 h-16 rounded-full bg-muted/30 flex items-center justify-center elegant-glow">
-              <Lock className="w-7 h-7 text-primary" strokeWidth={1.5} />
+        <div className="relative bg-card border border-border rounded-3xl p-6 sm:p-10 subtle-shadow">
+          {/* Lock icon with minimal styling */}
+          <div className="flex justify-center mb-6 sm:mb-8">
+            <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-secondary flex items-center justify-center">
+              <Lock className="w-6 h-6 sm:w-7 sm:h-7 text-primary" strokeWidth={1.5} />
             </div>
           </div>
 
           {/* Elegant heading */}
-          <div className="text-center mb-10">
-            <h1 className="font-serif text-3xl sm:text-4xl font-light text-foreground mb-3 tracking-wide">
+          <div className="text-center mb-8 sm:mb-10">
+            <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl font-light text-foreground mb-2 sm:mb-3 tracking-wide">
               Espace Privé
             </h1>
-            <p className="text-sm text-muted-foreground font-light">
+            <p className="text-xs sm:text-sm text-muted-foreground font-light">
               Veuillez vous identifier pour continuer
             </p>
           </div>
