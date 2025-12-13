@@ -61,19 +61,19 @@ export default function ConfirmationQuestion({ userName, onConfirm }) {
             </div>
 
             {/* Buttons container - relative positioning for the fleeing button */}
-            <div className="relative min-h-[120px] flex items-center justify-center">
-              <div className="flex gap-4 sm:gap-6">
+            <div className="relative min-h-[100px] sm:min-h-[120px] flex items-center justify-center">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-5 w-full sm:w-auto">
                 {/* Yes button - static */}
                 <Button
                   onClick={onConfirm}
-                  className="h-14 px-8 sm:px-12 bg-primary hover:bg-primary/90 text-primary-foreground text-lg font-medium transition-smooth elegant-glow"
+                  className="h-12 sm:h-14 px-8 sm:px-12 bg-primary hover:bg-primary/90 text-primary-foreground text-base sm:text-lg font-medium transition-smooth rounded-xl w-full sm:w-auto"
                 >
                   Oui
                 </Button>
 
                 {/* No button - runs away */}
                 <div 
-                  className="relative"
+                  className="relative w-full sm:w-auto"
                   style={{
                     transform: `translate(${noButtonPosition.x}px, ${noButtonPosition.y}px)`,
                     transition: 'transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
@@ -87,7 +87,7 @@ export default function ConfirmationQuestion({ userName, onConfirm }) {
                       handleNoButtonHover();
                     }}
                     variant="outline"
-                    className="h-14 px-8 sm:px-12 border-2 border-muted-foreground/30 text-muted-foreground hover:border-muted-foreground/50 hover:text-foreground text-lg font-medium transition-smooth"
+                    className="h-12 sm:h-14 px-8 sm:px-12 border-2 border-primary/30 text-primary hover:border-primary/50 hover:text-primary/90 text-base sm:text-lg font-medium transition-smooth rounded-xl w-full sm:w-auto"
                   >
                     Non
                   </Button>
@@ -97,8 +97,8 @@ export default function ConfirmationQuestion({ userName, onConfirm }) {
 
             {/* Playful hint after a few attempts */}
             {attempts > 2 && (
-              <div className="mt-8 animate-in fade-in slide-in-from-bottom-2 duration-500">
-                <p className="text-center text-sm text-muted-foreground/60 italic">
+              <div className="mt-6 sm:mt-8 animate-in fade-in slide-in-from-bottom-2 duration-500">
+                <p className="text-center text-xs sm:text-sm text-muted-foreground/70 italic px-4">
                   {attempts > 5 
                     ? "Tu sais qu'il n'y a qu'une seule bonne réponse... 😊"
                     : "Le bouton 'Non' semble être timide..."}
@@ -107,8 +107,8 @@ export default function ConfirmationQuestion({ userName, onConfirm }) {
             )}
 
             {/* Decorative separator */}
-            <div className="mt-12 flex justify-center">
-              <div className="w-32 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+            <div className="mt-8 sm:mt-12 flex justify-center">
+              <div className="w-20 sm:w-32 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
             </div>
           </div>
         </div>
