@@ -27,7 +27,7 @@ export default function ConfirmationQuestion({ userName, onConfirm }) {
   };
 
   return (
-    <div className="w-full max-w-2xl">
+    <div className="w-full max-w-2xl px-4">
       {/* Main content container with animation */}
       <div 
         className={`transition-all duration-1000 ${
@@ -36,26 +36,26 @@ export default function ConfirmationQuestion({ userName, onConfirm }) {
             : 'opacity-0 translate-y-8'
         }`}
       >
-        {/* Glass card for question */}
+        {/* Minimal card for question */}
         <div className="relative">
-          {/* Ambient glow */}
-          <div className="absolute -inset-1 bg-accent/10 blur-2xl rounded-3xl" />
+          {/* Subtle rose glow */}
+          <div className="absolute -inset-1 bg-accent/8 blur-2xl rounded-3xl" />
           
-          <div className="relative bg-card/70 backdrop-blur-xl border border-border/50 rounded-3xl p-8 sm:p-12 lg:p-16 subtle-shadow">
+          <div className="relative bg-card border border-border rounded-3xl p-6 sm:p-10 lg:p-14 subtle-shadow">
             {/* Heart icon */}
-            <div className="flex justify-center mb-8">
-              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 elegant-glow">
-                <Heart className="w-9 h-9 text-primary" strokeWidth={1.5} />
+            <div className="flex justify-center mb-6 sm:mb-8">
+              <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-secondary">
+                <Heart className="w-7 h-7 sm:w-9 sm:h-9 text-primary" strokeWidth={1.5} />
               </div>
             </div>
 
             {/* Question */}
-            <div className="text-center mb-12">
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-foreground mb-6 tracking-wide">
+            <div className="text-center mb-8 sm:mb-12">
+              <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-light text-foreground mb-4 sm:mb-6 tracking-wide">
                 {userName},
               </h2>
               
-              <p className="text-lg sm:text-xl text-foreground/90 font-light leading-relaxed">
+              <p className="text-base sm:text-lg lg:text-xl text-foreground/80 font-light leading-relaxed px-2">
                 Es-tu prêt(e) à découvrir ce qui t'attend ici ?
               </p>
             </div>
