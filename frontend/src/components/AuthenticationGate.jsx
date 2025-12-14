@@ -4,7 +4,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Lock } from 'lucide-react';
 
-const CORRECT_NAME = 'Marie'; // Secret first name
+const CORRECT_NAME = 'cathy'; // Secret first name
 
 export default function AuthenticationGate({ onAuthenticate }) {
   const [inputName, setInputName] = useState('');

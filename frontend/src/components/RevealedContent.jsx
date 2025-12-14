@@ -65,29 +65,35 @@ export default function RevealedContent({ userName }) {
               
               <div className="space-y-3.5 sm:space-y-4 text-sm sm:text-base lg:text-lg font-light max-w-2xl mx-auto">
                 <p>
-                  Dans un monde où tout est partagé, commenté, éphémère, j'ai voulu créer quelque chose
-                  qui n'appartient qu'à un seul regard : le tien.
+                  Comme je te l’avais dit, j’ai créé quelque chose pour toi 😅
+Ce n’est peut-être ni extraordinaire ni très beau, mais je l’ai fait avec sincérité, juste pour te dire quelque chose qui me tient vraiment à cœur 🥺
                 </p>
                 
                 <p>
-                  Pas de notifications. Pas d'algorithme. Pas de bruit.
-                </p>
+Normalement, personne ne peut accéder à ce message, sauf si on devine que seul ton prénom est accepté. Tous les autres sont refusés 😄                </p>
                 
                 <p>
-                  Juste un moment suspendu, une attention pure, un endroit où les mots peuvent exister
-                  sans être dilués dans le flux constant des écrans.
+                  Pour être honnête, j’apprécie énormément les moments où on discute ensemble, et encore plus ceux où je te vois en personne.
+Je ne suis pas très doué avec les mots, mais je vais quand même essayer d’exprimer ce que je ressens.
+                </p>
+
+                <p>
+                  Ce que je veux te dire, Cathy, c’est que je t’aime beaucoup.
+J’aimerais vraiment qu’on sorte ensemble et quand je dis “sortir”, je parle de devenir ma copine ❤️
+Quelqu’un avec qui je pourrais partager ma vie.
                 </p>
                 
                 <p className="pt-3 sm:pt-4 text-center text-muted-foreground italic text-xs sm:text-sm">
-                  Ce que tu lis ici, personne d'autre ne le lira jamais.
+                  Tu me repondra sur fb ou autre...
                 </p>
                 
                 <p className="pt-4 sm:pt-6 text-center">
-                  C'est rare, précieux, et terriblement fragile.
+                  Cette fois, je te pose la question sincèrement et j’attends une vraie réponse.
                 </p>
                 
                 <p className="pt-3 sm:pt-4 text-center font-medium text-primary">
-                  Exactement comme nous.
+                  
+Est-ce que tu accepterais de sortir avec moi et de devenir ma copine ? ❤️🥺
                 </p>
               </div>
             </div>
