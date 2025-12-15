@@ -1,3 +1,5 @@
+import { Play, Pause } from 'lucide-react';
+import { useRef } from 'react';
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { LogOut, Heart } from 'lucide-react';
@@ -14,6 +16,22 @@ export default function RevealedContent({ userName }) {
   const handleLogout = () => {
     window.location.reload();
   };
+
+  const audioRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const toggleAudio = () => {
+    if (!audioRef.current) return;
+
+    if (isPlaying) {
+      audioRef.current.pause();
+    } else {
+      audioRef.current.play();
+    }
+
+    setIsPlaying(!isPlaying);
+  };
+
 
   return (
     <div className="w-full max-w-3xl px-4">
@@ -56,6 +74,25 @@ export default function RevealedContent({ userName }) {
               
               <div className="w-16 sm:w-20 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent mx-auto" />
             </div>
+            <div className="flex flex-col items-center gap-4 mb-8">
+              <Button
+                onClick={toggleAudio}
+                variant="secondary"
+                className="flex items-center gap-2 rounded-full px-6 py-2 transition-all hover:scale-105"
+              >
+                {isPlaying ? (
+                  <Pause className="w-4 h-4" />
+                ) : (
+                  <Play className="w-4 h-4" />
+                  )}
+                <span className="text-sm font-light">
+                  {isPlaying ? 'Mettre en pause' : 'Écouter le message'}
+                </span>
+              </Button>
+
+              <audio ref={audioRef} src="/audio/numberone.mp3" />
+            </div>
+
 
             {/* Personal message */}
             <div className="space-y-5 sm:space-y-6 text-foreground/85 leading-relaxed">
