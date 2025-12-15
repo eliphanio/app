@@ -56,7 +56,7 @@ export default function ConfirmationQuestion({ userName, onConfirm }) {
               </h2>
               
               <p className="text-base sm:text-lg lg:text-xl text-foreground/80 font-light leading-relaxed px-2">
-Tu es prête à lire un petit message que j’ai préparé pour toi ? 😅
+Tu es prête à ecouvrir ce surpise que j’ai préparé pour toi ? 😅
               </p>
               <p className="pt-3 sm:pt-4 text-center text-muted-foreground italic text-xs sm:text-sm">
                   Attention le "non" fuis !!
