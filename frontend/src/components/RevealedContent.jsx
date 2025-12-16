@@ -90,17 +90,12 @@ export default function RevealedContent({ userName }) {
                 </span>
               </Button>
 
-              <audio ref={audioRef} src="/audio/numberone.mp3" />
-            </div>
-
-            <div>
-              salut voary tu ecoutera seulement la musique mais tu ne vera pas plus 🤣🤣
-              T'es juste là pour tester
+              <audio ref={audioRef} src="/audio/message.mp3" />
             </div>
 
 
             {/* Personal message */}
-            {/* <div className="space-y-5 sm:space-y-6 text-foreground/85 leading-relaxed">
+            <div className="space-y-5 sm:space-y-6 text-foreground/85 leading-relaxed">
               <p className="text-base sm:text-lg lg:text-xl font-light text-center">
                 Cet espace n'existe que pour toi.
               </p>
@@ -115,7 +110,7 @@ Ce n’est peut-être ni extraordinaire ni très beau, mais je l’ai fait avec 
 Normalement, personne ne peut accéder à ce message, sauf si on devine que seul ton prénom est accepté. Tous les autres sont refusés 😄                </p>
                 
                 <p>
-                  Pour être honnête, j’apprécie énormément les moments où on discute ensemble, et encore plus ceux où je te vois en personne.
+                  Pour être honnête, j’apprécie énormément les moments où on discute ensemble, et j'ai une envie inébranlable de te voir.
 Je ne suis pas très doué avec les mots, mais je vais quand même essayer d’exprimer ce que je ressens.
                 </p>
 
@@ -138,7 +133,7 @@ Quelqu’un avec qui je pourrais partager ma vie.
 Est-ce que tu accepterais de sortir avec moi et de devenir ma copine ? ❤️🥺
                 </p>
               </div>
-            </div> */}
+            </div>
 
             {/* Decorative separator */}
             <div className="mt-8 sm:mt-10 lg:mt-12 flex justify-center">
