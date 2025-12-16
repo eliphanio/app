@@ -93,9 +93,14 @@ export default function RevealedContent({ userName }) {
               <audio ref={audioRef} src="/audio/numberone.mp3" />
             </div>
 
+            <div>
+              salut voary tu ecoutera seulement la musique mais tu ne vera pas plus 🤣🤣
+              T'es juste là pour tester
+            </div>
+
 
             {/* Personal message */}
-            <div className="space-y-5 sm:space-y-6 text-foreground/85 leading-relaxed">
+            {/* <div className="space-y-5 sm:space-y-6 text-foreground/85 leading-relaxed">
               <p className="text-base sm:text-lg lg:text-xl font-light text-center">
                 Cet espace n'existe que pour toi.
               </p>
@@ -133,7 +138,7 @@ Quelqu’un avec qui je pourrais partager ma vie.
 Est-ce que tu accepterais de sortir avec moi et de devenir ma copine ? ❤️🥺
                 </p>
               </div>
-            </div>
+            </div> */}
 
             {/* Decorative separator */}
             <div className="mt-8 sm:mt-10 lg:mt-12 flex justify-center">
