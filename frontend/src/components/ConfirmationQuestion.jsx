@@ -56,7 +56,7 @@ export default function ConfirmationQuestion({ userName, onConfirm }) {
               </h2>
               
               <p className="text-base sm:text-lg lg:text-xl text-foreground/80 font-light leading-relaxed px-2">
-Es ce que tu m'aime? 😅
+                Avant tous, ce site contient ce que j'ai sur le coeur...t'es prete a continué? 😅
               </p>
               <p className="pt-3 sm:pt-4 text-center text-muted-foreground italic text-xs sm:text-sm">
                   Attention le "non" fuis !!
